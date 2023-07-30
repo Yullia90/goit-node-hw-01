@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Домашнє завдання 1\r Крок 1\r Ініціалізується npm в проекті\r В корені проекту створи файл index.js\r Постав пакет nodemon як залежність nodemon як залежність розробки (devDependencies)\r В файлі package.json додай \"скрипти\" для запуску index.js\r Скрипт start який запускає index.js за допомогою node\r Скрипт dev який запускає index.js за допомогою nodemon\r Крок 2\r У корені проекту створи папку db. Для зберігання контактів завантаж і використовуй файл contacts.json, поклавши його в папку db.",
   "main": "index.js",
-  "type":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index",
@@ -13,8 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "commander": "^11.0.0",
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nanoid": "^3.3.4",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",

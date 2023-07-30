@@ -139,13 +139,26 @@ node index.js --action="remove" --id qdggE76Jtbfd9eWJHrssH
 У коді немає закоментованих ділянок коду
 Проект коректно працює з актуальною LTS-версією Node
 Cкріншоти
-Screenshoot
 
-Screenshoot
+# Отримуємо і виводимо весь список контактів у вигляді таблиці (console.table)
+node index.js --action="list"
+![Alt text](img/list.png)
 
-Screenshoot
+# Отримуємо контакт по id і виводимо у консоль об'єкт контакта або null якщо контакту з таким id не існує
+node index.js --action="get" --id 05olLMgyVQdWRwgKfg5J6
+![Alt text](img/get.png)
 
-Screenshoot
+# Додаємо контакт та виводимо в консоль об'єкт новоствореного контакту
+node index.js --action="add" --name Mango --email mango@gmail.com --phone 322-22-22
+![Alt text](img/add.png)
+
+# Видаляємо контакт та виводимо в консоль об'єкт видаленого контакту або null якщо контакту з таким id не існує
+node index.js --action="remove" --id qdggE76Jtbfd9eWJHrssH
+![Alt text](img/remove.png)
+
+
+
+
 
 Node.js ---> commands
 npm init -y
@@ -165,3 +178,5 @@ yarn add nanoid@3.3.4
 npm run dev
 
 yarn dev
+
+
