@@ -1,5 +1,6 @@
 const fs = require("fs/promises");
 const path = require("path");
+const chalk = require("chalk");
 const { nanoid } = require("nanoid");
  
 const contactsPath = path.resolve(__dirname,"./db/contacts.json");
